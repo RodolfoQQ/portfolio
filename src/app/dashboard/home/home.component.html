@@ -1,0 +1,92 @@
+<body class="">
+  <div class="row row-cols-md-2 row-cols-sm-1 p-4 baner shadow-sm">
+    <div class="d-flex justify-content-center align-items-center">
+      <img class="img-fluid" src="assets/equipos.png" alt="" />
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <h2 class="text-center">
+        {{ resposive }}
+      </h2>
+      <button (click)="gotoportafolio()" class="botongeneral">Portafolio</button>
+    </div>
+  </div>
+
+  <div class="container mt-5" id="servicios">
+    <div class="row row-cols-md-3 row-cols-1 gx-4 gy-4 text-center">
+      <div class="col">
+        <div
+          class="p-4 shadow border h-100 d-flex flex-column align-items-center"
+        >
+          <img src="assets/disenio.jpeg" class="caracteristicas" alt="" />
+          <h2>Diseño Personalizado</h2>
+          <p>
+            Nuestro enfoque es crear un sitio web que fortalezca tu marca y sea
+            fácil de usar.
+          </p>
+          <button class="botongeneral" (click)="personalizado('personalizado')">
+            Ver más
+          </button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div
+          class="p-4 border shadow h-100 d-flex flex-column align-items-center"
+        >
+          <img src="assets/escalable.jpeg" class="caracteristicas" alt="" />
+          <h2>Webs Escalables</h2>
+          <p>
+            Programación modular para facilitar el crecimiento y mantenimiento
+            de tu aplicación.
+          </p>
+          <button class="botongeneral" (click)="escalable('escalable')">
+            Ver más
+          </button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div
+          class="p-4 border shadow h-100 d-flex flex-column align-items-center"
+        >
+          <img src="assets/adaptable.jpeg" class="caracteristicas" alt="" />
+          <h2>Adaptables a móviles</h2>
+          <p>
+            Tu sitio se adaptará perfectamente a cualquier pantalla o
+            dispositivo.h2
+          </p>
+          <button class="botongeneral" (click)="moviles('mobiles')">
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 ">
+    <div class="slider d-flex justify-content-center  row row-cols-sm-1 shadow">
+      <div #persChild id="personalizado">
+        <h3>Web Personalizada con Código: Hecha a Medida para Cada Proyecto</h3>
+        <p>
+          {{personalizadachild}}
+        </p>
+      </div>
+      <div #escChild id="escalable">
+        <h3>¿Qué es una Web Escalable y por qué es importante?</h3>
+        <p>
+          {{ escalablechild }}
+        </p>
+      </div>
+      <div #mobiChild id="mobiles">
+        <h3>Beneficios de Usar Bootstrap para Crear Sitios Web Adaptables</h3>
+        <p>
+          Bootstrap es uno de los frameworks más populares para el desarrollo
+          web, y se ha convertido en una herramienta esencial para crear
+          interfaces modernas, responsivas y eficientes. Uno de los principales
+          beneficios de utilizar Bootstrap es su capacidad para diseñar sitios
+          web adaptables que se ven bien en cualquier dispositivo, ya sea una
+          computadora de escritorio, una tablet o un smartphone.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>

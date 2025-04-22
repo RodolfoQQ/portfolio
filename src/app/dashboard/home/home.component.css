@@ -1,0 +1,47 @@
+
+.caracteristicas{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.boxs-carateristicas>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+ul{
+  list-style: none;
+  display: flex;
+}
+h2{
+  color: rgb(43, 60, 137);
+  margin: 15px 0px;
+}
+.col > div, .baner{
+  background: rgb(241, 244, 249);
+}
+
+.slider{
+width: 100%;
+block-size: auto;
+display: flex;
+position: relative;
+overflow-y: hidden;
+overflow-x: hidden;
+/* overflow-x: hidden; */
+
+}
+
+.slider>div{
+  /* position: absolute; */
+  background: rgb(241, 244, 249);
+  transition: 0.8s;
+
+  text-align: center;
+  padding: 25px;
+  }
+
+

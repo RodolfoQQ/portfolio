@@ -1,0 +1,49 @@
+
+h2{
+color: green;
+}
+
+ul,li,a{
+  list-style: none;
+  text-decoration: none;
+  color: #54678f;
+  font-weight: bold;
+  text-align: justify;
+
+}
+
+p{
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.row>div>div{
+  background: rgb(241, 244, 249);
+  text-align: center;
+}
+img{
+  margin: 2em;
+}
+
+.img-fluid{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.btn-info{
+  margin-bottom: 25px;
+}
+.container{
+  margin-bottom: 25px;
+}
+.mennuflotante {
+position: fixed;
+width: auto;
+padding: 25px;
+
+right: 150px;
+
+
+  /* Para que funcione correctamente */
+}

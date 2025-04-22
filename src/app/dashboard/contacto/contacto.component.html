@@ -1,0 +1,75 @@
+<div class="container  py-5">
+  <div class="row  d-flex justify-content-center">
+    <div class="col-md-8 col-lg-6 ">
+      <div class="card shadow " >
+        <div class="card-body  p-4">
+          <h2 class="text-center mb-4">Contáctame</h2>
+          <p class="text-center text-muted mb-4">Envíame un mensaje y me pondré en contacto contigo lo antes posible.</p>
+
+          <form action="https://formsubmit.co/123rod123@gmail.com" method="POST" class="contact-form">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" name="asunto" class="form-control" id="asunto" placeholder="¿Sobre qué quieres hablar?" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea name="mensaje" class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+
+            <!-- Opcional: evitar spam -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Enviar mensaje</button>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-6">
+      <div class="card shadow">
+        <div id="carouselProgramming" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="d-block w-100" alt="Programming" style="height: 100%; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" class="d-block w-100" alt="Coding" style="height: 100%; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" class="d-block w-100" alt="Development" style="height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProgramming" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProgramming" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card shadow p-4">
+        <p>¿Trabajamos juntos?
+          Estoy siempre abierto a nuevas oportunidades, colaboraciones creativas o simplemente una buena charla sobre ideas. Si te interesa lo que ves y crees que puedo ayudarte en tu proyecto, ¡no dudes en escribirme!
+          💬 Conversemos y hagamos que las ideas cobren vida.</p>
+      </div>
+    </div>
+  </div>
+
+</div>

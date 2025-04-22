@@ -1,0 +1,54 @@
+<body>
+  <div
+  class="container col-lg-8  col-md-8  p-md-0 "
+  >
+
+
+  <div class="container-bar shadow-lg">
+  <nav class="bar col-10">
+    <div>
+      <img class="imgperfil" src="assets/fotoperfil.jpeg" alt="Rodolfo rod" />
+    </div>
+
+    <div>
+      <button   id="menumobiles" class="menumobiles" (click)="openmenumovil()">
+        <div ></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <ul class="opciones-menu" [ngClass]="{ open: valormenumovil }">
+        <li class="ms-3">
+          <div class="div-menu"><a (click)="gotoTohome()">Inicio</a></div>
+        </li>
+        <li class="ms-3">
+          <div class="div-menu"><a (click)="gotoPortfolio()">Portafolio</a></div>
+        </li>
+        <li class="ms-3">
+          <div class="div-menu">
+            <a (click)="gotoServices()" >Servicios</a>
+          </div>
+        </li>
+        <li class="ms-3">
+           <div class="div-menu"><a (click)="gotoTegnologias()">Tecnologias</a></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <section class="presentacion pt-5">
+    <div class="frelacerweb pt-5">
+      <h1>
+        {{ frelacerweb }}
+      </h1>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>
+
+</div>
+<app-footer></app-footer>
+
+</body>
+
+

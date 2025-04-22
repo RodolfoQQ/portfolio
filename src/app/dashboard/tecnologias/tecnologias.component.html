@@ -1,0 +1,63 @@
+<body>
+  <div class="container-fluid p-0 m-0">
+    <div class="row gx-2 gy-2">
+      <!-- Columna de contenido (izquierda) -->
+      <div class="col-lg-9 col-sm-12">
+        <div id="angular" class="mb-4">
+          <img class="rounded" src="assets/angular.jpeg" alt="angular" width="90%" />
+          <p class="px-sm-5 px-3">{{ angular }}</p>
+          <button class="botongeneral">    <a   style="color: aliceblue; font-size: 12px;" href="https://angular.io/">Saber más</a>      
+          </button>
+        </div>
+
+        <div id="spring" class="mb-4">
+          <img class="rounded" src="assets/spring.jpeg" alt="spring" width="90%" />
+          <p class="px-sm-5 px-3">{{ spring }}</p>
+          <button class="botongeneral">    <a   style="color: aliceblue; font-size: 12px;" href="https://spring.io/">Saber más</a>      
+          </button>
+        </div>
+
+        <div id="sql" class="mb-4">
+          <img class="rounded" src="assets/sql.avif" alt="sql" width="90%" />
+          <p class="px-sm-5 px-3">{{ sql }}</p>
+          <button class="botongeneral">    <a   style="color: aliceblue; font-size: 12px;" href="https://www.mysql.com/">Saber más</a>      
+          </button>
+        </div>
+
+
+        <div id="doker" class="mb-4">
+          <img class="rounded" src="assets/doker.jpeg" alt="docker" width="90%" />
+          <p class="px-sm-5 px-3">{{ doker }}</p>
+          <button class="botongeneral">    <a   style="color: aliceblue; font-size: 12px;" href="https://www.docker.com/">Saber más</a>      
+          </button>
+        </div>
+
+        <div id="otros" class="mb-4">
+          <div class="d-flex flex-wrap  justify-content-center">
+            <img class="rounded" src="assets/bots.jpeg" alt="bots" width="25%" />
+            <img class="rounded" src="assets/psd.jpeg" alt="psd" width="25%" />
+            <img class="rounded" src="assets/ai.jpeg" alt="ai" width="25%" />
+            <img class="rounded" src="assets/aws.jpeg" alt="aws" width="25%" />
+          </div>
+          <p class="px-sm-5 px-3">{{ otros }}</p>
+          <button class="botongeneral">Saber más</button>
+        </div>
+      </div>
+
+      <!-- Menú lateral a la derecha (baja con la pantalla) -->
+      <div class="col-lg-3 d-none d-lg-block ">
+        <div class="mennuflotante">
+          <h2 class="text-center">Tecnologías</h2>
+          <ul class="list-unstyled text-center">
+            <li><a href="javascript:void(0)" (click)="scrollTo('angular')">Angular</a></li>
+            <li><a href="javascript:void(0)" (click)="scrollTo('spring')">Spring Boot</a></li>
+            <li><a href="javascript:void(0)" (click)="scrollTo('sql')">SQL & MySQL</a></li>
+            <li><a href="javascript:void(0)" (click)="scrollTo('doker')">Docker</a></li>
+            <li><a href="javascript:void(0)" (click)="scrollTo('otros')">Otros</a></li>
+            <li><a href="javascript:void(0)" (click)="inicio()">Inicio</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
